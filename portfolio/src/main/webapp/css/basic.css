@@ -15,36 +15,6 @@ div.transbox {
 	opacity: 0.8;
 }
 
-body {
-	background-image: url(images/background_image.jpg);
-	background-size: cover;
-}
-
-h1 {
-	text-align: center;
-}
-
-h2.ex1 {
-  margin-left: 1cm;
-}
-
-h3.ex1 {
-  margin-left: 1cm;
-}
-
-img.ex1 {
-	margin-left: 1cm;
-}
-
-p {
-	margin-left: 1cm;
-	color:mediumpurple;
-}
-
-p.ex1 {
-	margin-right: 2cm;
-}
-
 div.transbox table {
 	width: 100%;
 	border: 0;
@@ -56,30 +26,35 @@ td {
 	text-align: center;
 	width: 100;
 	border-bottom: #3993d8;
+	font-size: 22px;
+	font-family: 'Brush Script MT', cursive;
 }
 
 a {
-	font-size: 14px;
+	font-weight: bold;
 }
+
 a:link {
 	color: #333;
 	text-decoration: none;
 }
+
 a:visited {
 	text-decoration: none;
 	color: #333;
 }
+
 a:hover {
 	text-decoration: none;
 	color: rgb(100, 34, 187);
 }
+
 a:active {
 	text-decoration: none;
 	color: #333;
 }
 
-#music_player {
-	position: fixed;
-	bottom: 0;
-	left: 0;
+h1 {
+	text-align: center;
+	font-family: Garamond, serif;
 }

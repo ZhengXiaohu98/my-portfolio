@@ -1,0 +1,26 @@
+h2.ex1 {
+  margin-left: 1cm;
+}
+
+h3.ex1 {
+  margin-left: 1cm;
+}
+
+img.ex1 {
+	margin-left: 1cm;
+}
+
+p {
+	margin-left: 1cm;
+	color:mediumpurple;
+}
+
+p.ex1 {
+	margin-right: 2cm;
+}
+
+#music_player {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

@@ -1,0 +1,13 @@
+#project_detail {
+	position: relative;
+	margin-left: 1cm;
+	margin-top: 1cm;
+}
+
+
+#buttons li{
+	display:inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
