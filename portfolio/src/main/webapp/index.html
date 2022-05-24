@@ -2,23 +2,39 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Portfolio - Xiaohu</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Hi, I am Xiaohu Zheng. I like algorithm questions, and I solve leetcode 
-          questions in my free time, sometimes I write solutions too. I have a very 
-          strong interest in UE5, and I am currenly learning it. Other than that, 
-          I like C++ programming and network programming.
-      </p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+			<div class="transbox">	
+				<table class="nav">
+					<tr>
+						<td><a href="index.html">Home</a></td>
+						<td><a href="projects.html">Projects</a></td>
+						<td><a href="photos.html">Gallery</a></td>
+						<td><a href="aboutme.html">About me</a></td>
+					</tr>
+				</table>
+				<h1>Xiaohu's Portfolio</h1>
+				<img src="images/selfie.jpg" height="300px" width="220px" class="ex1" />	
+				<h2 class="ex1">Xiaohu Zheng</h2>
+				<h3 class="ex1">GitHub: </h3>
+				<h3 class="ex1">LinkedIn</h3>
+				<h3 class="ex1">School:</h3>
+				<p class="ex1">Hi, I am Xiaohu Zheng. I like algorithm questions, and I solve leetcode 
+					questions in my free time, sometimes I write solutions too. I have a very 
+					strong interest in UE5, and I am currenly learning it. Other than that, 
+					I like C++ programming and network programming.
+				</p>
+			</div>
     </div>
+		<div id="music_player">
+			<audio controls autoplay>
+				<source src="bgm/bgm1.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
   </body>
 </html>
