@@ -3,9 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/photos.css">
 	<title>Photos</title>
 </head>
 <body>
-	
+	<body style="background-image:url(img/bgi.jpg); background-size: cover;">
+		<div id="content">
+			<div class="transbox">
+				<!-- Navigation Bar -->
+				<table class="nav">
+					<tr>
+						<td><a href="index.html">Home</a></td>
+						<td><a href="projects.html">Projects</a></td>
+						<td><a href="photos.html">Gallery</a></td>
+						<td><a href="aboutme.html">About me</a></td>
+					</tr>
+				</table>
+				<br>
+				<!-- Container for photos -->
+				<div id="pictures">
+				</div>
+				<!-- Buttons for forward and backward -->
+				<div id="buttons">
+					<ul>
+						<li><button onclick="changePhoto(-1)">Previous</button></li>
+						<li><button onclick="changePhoto(1)">Next</button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Background Music Player -->
+			<div id="music_player">
+				<audio controls autoplay>
+					<source src="bgm/bgm1.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</div>
+		<script type="text/javascript" src="get_photos.js"></script>
+	</body>
 </body>
 </html>
