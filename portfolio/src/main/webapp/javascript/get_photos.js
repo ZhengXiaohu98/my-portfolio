@@ -46,6 +46,15 @@ const photo_descriptions = [
 	"My life is simple, so nothing too exciting... Thanks for looking :)"
 ];
 
+// animation list for entrances
+const animation_list = [
+	"animate__animated animate__bounceInLeft",
+	"animate__animated animate__bounceInRight",
+	"animate__animated animate__bounceInUp",
+	"animate__animated animate__rubberBand",
+	"animate__animated animate__rollIn",
+]
+
 // i: index of the current photo
 let i = 0;
 
@@ -64,8 +73,9 @@ function changePhoto(val) {
 	i += val;
 	
 	let txt = "";
-	txt += "<img src='" + photo_urls[i] + "' />";
-	txt += "<p>" + photo_descriptions[i] + "</p>";
+	txt += "<img class='img_container' src='" + photo_urls[i] + "' />";
+	const tmpIdx = Math.floor(Math.random()*animation_list.length);
+	txt += "<p class='" + animation_list[tmpIdx] +"'>" + photo_descriptions[i] + "</p>";
 	document.getElementById("pictures").innerHTML = txt;
 }
 

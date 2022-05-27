@@ -4,9 +4,31 @@
 	margin-top: 1cm;
 }
 
-#buttons li{
-	display:inline;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+li {
+	font-size:18px;
+}
+
+#btn_left {
+	height: 50px;
+	width: 50px;
+}
+
+#btn_left:hover{
+	height: 60px;
+	width: 60px;
+}
+
+#btn_right {
+	height: 50px;
+	width: 50px;
+}
+
+#btn_right:hover{
+	height: 60px;
+	width: 60px;
+}
+
+button {
+	border: 0;
+	background-color:#ffffff;
 }

@@ -55,6 +55,7 @@ function changeProject(val) {
 	// text holds the HTML project content
 	let text = "";
 
+	text += "<div class='animate__animated animate__slideInLeft'>"
 	text += "<h2>" + "Project: " + projects[i].name + "</h2>";
 	text += "<h3>" + "Timeline: " + projects[i].timeline + "</h3>";
 	text += "<a href='" + projects[i].link + "'>" + projects[i].name + " - GitHub</a>";
@@ -64,7 +65,7 @@ function changeProject(val) {
 	for (let d of projects[i].details) {
 		text += "<li>" + d + "</li>";
 	}
-	text += "</ul>";
+	text += "</ul></div>";
 
 	document.getElementById("project_detail").innerHTML = text;
 }
