@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/basic.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<title>Projects</title>
+</head>
+<body style="background-image:url(img/bgi.jpg); background-size: cover;">
+	<div id="content">
+		<div class="transbox">
+			<!-- Navigation Bar -->
+			<table class="nav">
+				<tr>
+					<td><a href="index.html">Home</a></td>
+					<td><a href="projects.html">Projects</a></td>
+					<td><a href="photos.html">Gallery</a></td>
+					<td><a href="aboutme.html">About me</a></td>
+				</tr>
+			</table>
+			<br><br>
+			<table>
+				<tr height="400px">
+					<td>
+						<button onclick="changeProject(-1)">
+							<img src="img/btn_left.png" id="btn_left" />
+						</button>
+					</td>
+					<td>
+						<!-- Project Content -->
+						<div id="project_detail" style="position: relative; margin-left: 1cm; margin-top: 1cm;"></div>
+					</td>
+					<td>
+						<button onclick="changeProject(-1)">
+							<img src="img/btn_right.png" id="btn_right" />
+						</button>
+					</td>
+				</tr>				
+			</table>
+		</div>
+		<!-- Background Music Player -->
+		<div id="music_player">
+			<audio controls autoplay>
+				<source src="bgm/bgm1.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/get_projects.js"></script>
+</body>
+</html>

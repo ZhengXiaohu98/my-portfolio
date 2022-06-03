@@ -2,18 +2,61 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
+    <title>Portfolio - Xiaohu</title>
+    <link rel="stylesheet" href="css/basic.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<style>
+			img.info {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			p.info {
+				text-align: center;
+				font-family: Verdana, sans-serif;
+			}
+		</style>
+	</head>
+	<body style="background-image:url(img/bgi.jpg); background-size: cover;">
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+			<div class="transbox">
+				<!-- Navigation Bar -->
+				<table class="nav">
+					<tr>
+						<td><a href="index.html">Home</a></td>
+						<td><a href="projects.html">Projects</a></td>
+						<td><a href="photos.html">Gallery</a></td>
+						<td><a href="aboutme.html">About me</a></td>
+					</tr>
+				</table>
+				<!-- A breif introduction -->
+				<h2>Xiaohu's Portfolio</h2>
+				<img src="img/profile_img2.jpg" height="180px" width="131px" class="info" />	
+				<p class="info animate__animated animate__fadeInBottomLeft animate__slow">
+					Hi, welcome to Xiaohu's portfolio. In "Project", You can find the projects I have worked on. 
+					You can also view some of the food I made in "Gallery". You can find my information in "About me". I mainly use 
+					C++ for programming, and I have a good understanding of data structure & algorithm. 
+					Below is a breif introduction of me.
+				</p>
+				<p class="info animate__animated animate__fadeInBottomRight animate__slow">
+					A few sentences can't explain a person, just like a book cover won't tell you its content. 
+					My name is "Xiaohu", it stands for little tiger in case you are curious. I used to play 
+					video games a lot, mostly league of lengend, but now I focus more on my study and rarely play. 
+					In my free time, I solve algorithm questions for fun. I forced myself to started it out to just 
+					improve myself, but then I found it very interesting, and now it becomes a habit. Topics like bits 
+					manipulation, union find and trie tree are just cool. I sometimes enjoy my time alone to just 
+					think	about the world. Thank you for reading through this!
+				</p>
+			</div>
     </div>
+		<!-- Background Music Player -->
+		<div id="music_player">
+			<audio controls autoplay>
+				<source src="bgm/bgm1.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
   </body>
 </html>
