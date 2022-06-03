@@ -1,0 +1,14 @@
+#btn_left, #btn_right {
+	height: 50px;
+	width: 50px;
+}
+
+#btn_left:hover, #btn_right:hover {
+	height: 60px;
+	width: 60px;
+}
+
+button {
+	border: 0;
+	background-color:#ffffff;
+}

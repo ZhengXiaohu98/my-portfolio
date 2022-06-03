@@ -63,7 +63,7 @@ function changeProject(val) {
 	text += "<ul>";
 	// loop thru the project details
 	for (let d of projects[i].details) {
-		text += "<li>" + d + "</li>";
+		text += "<li style='font-size:18px;'>" + d + "</li>";
 	}
 	text += "</ul></div>";
 

@@ -15,11 +15,7 @@ const photo_urls = [
 	"img/pictures/food8.jpg",
 	"img/pictures/food10.jpg",
 	"img/pictures/food11.jpg",
-	"img/pictures/me3.jpg",
-	"img/pictures/me1.jpg",
-	"img/pictures/me6.jpg",
-	"img/pictures/me5.jpg",
-	"img/pictures/me2.jpg",
+	"img/pictures/me2.jpg"
 ];
 
 // descriptions for the photo
@@ -39,10 +35,6 @@ const photo_descriptions = [
 	"Spicy Pot -- I loooove it!!",
 	"I don't have a good name for this, but it is tasty lol",
 	"Fried tofu? -- Tasty too?",
-	"When I was a child~",
-	"This was taken recently by my friend..",
-	"Going to school o(*￣▽￣*)ブ",
-	"I was happy when I took this picture, but I was depressed when I used it.",
 	"My life is simple, so nothing too exciting... Thanks for looking :)"
 ];
 
