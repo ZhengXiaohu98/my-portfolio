@@ -21,14 +21,22 @@
 				</tr>
 			</table>
 			<hr>
+			<div>
+				<ul id="comments_list">
+				</ul>
+			</div>
+			<hr>
 			<form action="/comments-handler" method="POST">
-				<p>Leave any comments here:</p>
-				<textarea name="text-input">hello world</textarea>
+				<label for="person-name">Your name:</label>
+				<input type="text" id="person-name" name="person-name"><br />
+				<label for="comments">Comments:</label><br />
+				<textarea id="comments" name="comments">hello world</textarea>
 				<br />
 				<input type="submit" />
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript" src="javascript/fetch_comments.js"></script>
 </body>
 
 </html>
