@@ -33,7 +33,6 @@ public class FormHandlerServlet extends HttpServlet {
 				.set("timestamp", timestamp)
 				.build();
 		datastore.put(commentEntity);
-		// Write the value to the response so the user can see it.
-		response.getWriter().println("You submitted: " + comments);
+		response.sendRedirect("https://xzheng-sps-summer22.appspot.com/comments.html");
 	}
 }

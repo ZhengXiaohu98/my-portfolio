@@ -41,7 +41,6 @@ public class CommentsServlet extends HttpServlet {
 		}
 
 		String resultList = convertListToJson(comments);
-		System.out.println(resultList);
 		response.setContentType("application/json;");
 		response.getWriter().println(resultList);
 	}

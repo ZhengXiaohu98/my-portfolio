@@ -5,6 +5,61 @@
 	<meta charset="UTF-8">
 	<title>Portfolio - Xiaohu</title>
 	<link rel="stylesheet" href="css/basic.css">
+	<style>
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 45px;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.button:hover {
+			box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		textarea {
+			width: 80%;
+			height: 100px;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f8f8f8;
+			font-size: 16px;
+			resize: none;
+		}
+
+		.comment_section {
+			margin-left: 5px;
+		}
+
+		.comment_head {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			height: 18px;
+		}
+
+		.comment_person {
+			float: left;
+		}
+
+		.comment_time {
+			float: right;
+			margin-right: 3px;
+		}
+
+		.comment_content {
+			background-color: #f8f8f8;
+			border-radius: 3px;
+			margin-top: 5px;
+		}
+	</style>
 </head>
 
 <body style="background-image:url(img/bgi.jpg); background-size: cover;">
@@ -20,20 +75,19 @@
 					<td><a href="comments.html">Comments</a></td>
 				</tr>
 			</table>
-			<hr>
-			<div>
-				<ul id="comments_list">
-				</ul>
+			<hr style="border: 2px solid rgb(165, 235, 231); border-radius: 5px;">
+			<div id="comment_container">
 			</div>
-			<hr>
-			<form action="/comments-handler" method="POST">
-				<label for="person-name">Your name:</label>
-				<input type="text" id="person-name" name="person-name"><br />
-				<label for="comments">Comments:</label><br />
-				<textarea id="comments" name="comments">hello world</textarea>
-				<br />
-				<input type="submit" />
-			</form>
+			<div style="position: fixed; bottom: 10px; text-align: center; width:50%;">
+				<form action="/comments-handler" method="POST">
+					<label for="person-name" style="font-family: cursive;">Your Name:</label>
+					<input type="text" id="person-name" name="person-name" required><br /><br />
+					<textarea id="comments" name="comments"
+						placeholder="I appreciate any suggestions! Feel free to comment anything!"></textarea>
+					<br />
+					<input type="submit" class="button" value="Comment" />
+				</form>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="javascript/fetch_comments.js"></script>

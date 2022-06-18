@@ -1,6 +1,5 @@
 // photo urls holds the img path
 const photo_urls = [
-	"img/pictures/profile_img.jpg",
 	"img/pictures/food13.jpg",
 	"img/pictures/food14.jpg",
 	"img/pictures/food15.jpg",
@@ -15,12 +14,10 @@ const photo_urls = [
 	"img/pictures/food8.jpg",
 	"img/pictures/food10.jpg",
 	"img/pictures/food11.jpg",
-	"img/pictures/me2.jpg"
 ];
 
 // descriptions for the photo
 const photo_descriptions = [
-	"There isn't much too show, but I still hope you will like them.",
 	"Glutinous Rice Cake -- First Try",
 	"Having Hot-Pot with friends~",
 	"Didn't really like it :/ but looks nice",
@@ -35,7 +32,6 @@ const photo_descriptions = [
 	"Spicy Pot -- I loooove it!!",
 	"I don't have a good name for this, but it is tasty lol",
 	"Fried tofu? -- Tasty too?",
-	"My life is simple, so nothing too exciting... Thanks for looking :)"
 ];
 
 // animation list for entrances
