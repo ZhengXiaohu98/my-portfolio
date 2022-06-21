@@ -2,10 +2,10 @@
 function getDate(timeStamp) {
 	const date = new Date(timeStamp);
 	const dateStr = (date.getMonth() + 1) +
-			"/" + date.getDate() +
-			"/" + date.getFullYear() +
-			"   " + (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) +
-			":" + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
+		"/" + date.getDate() +
+		"/" + date.getFullYear() +
+		"   " + (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) +
+		":" + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
 	return dateStr;
 }
 
