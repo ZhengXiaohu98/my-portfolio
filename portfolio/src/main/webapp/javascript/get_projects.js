@@ -4,44 +4,54 @@
 
 const projects = [
 	{
-		name:"GradSchoolZero",
-		timeline:"Oct 2021",
-		link:"https://github.com/ZhengXiaohu98/graduate_system",
-		details:[
-							"A graduate school system which is used to do school management",
-							"Implemented features include applying to be a student/an instructor, viewing applications, sending system notification, setting up class period, adding/suspending students/instructors, etc",
-							"Responsibilities: Distributing works, relational table design, document writing",
-							"Building environment: Python, Django, HTML, CSS."
-						]
+		name: "MyPortfolio",
+		timeline: "June 2022",
+		link: "https://github.com/ZhengXiaohu98/my-portfolio",
+		details: [
+			"A portfolio website shows my personal projects and some basic information.",
+			"Implemented features including add comments, fetch messages from server.",
+			"Building environment: Java, HTML, JavaScript, CSS."
+		]
 	},
 	{
-		name:"STUDENT_INFO_SYSTEM",
-		timeline:"Aug 2021",
-		link:"https://github.com/ZhengXiaohu98/Student_info_system",
-		details:[
-							"A GUI application which allows different types of users (Student, Instructor, School Administration, Root User) to manage their personal information and course information.",
-							"Implemented features: Students are allowed to add/search/drop courses, instructors are allowed to check the course & student information, School Administrators are allowed to add/drop courses, root users have all the permissions. ",
-							"Building environment: C++, QT creator, SQLite"
-						]
+		name: "GradSchoolZero",
+		timeline: "Oct 2021",
+		link: "https://github.com/ZhengXiaohu98/graduate_system",
+		details: [
+			"A graduate school system which is used to do school management",
+			"Implemented features include applying to be a student/an instructor, viewing applications, sending system notification, setting up class period, adding/suspending students/instructors, etc",
+			"Responsibilities: Distributing works, relational table design, document writing",
+			"Building environment: Python, Django, HTML, CSS."
+		]
 	},
 	{
-		name:"Basic OpenCV",
-		timeline:"May 2020",
-		link:"https://github.com/ZhengXiaohu98/OpenCV_DEMO",
-		details:[
-							"A program which demonstrates basic functionalities of OpenCV library.",
-							"Implemented features: changing color space and rotating images, creating trackbars, mouse event and keyboard responses, face detection.",
-							"Building environment: C++, Visual Studio, OpenCV library"
-						]
+		name: "STUDENT_INFO_SYSTEM",
+		timeline: "Aug 2021",
+		link: "https://github.com/ZhengXiaohu98/Student_info_system",
+		details: [
+			"A GUI application which allows different types of users (Student, Instructor, School Administration, Root User) to manage their personal information and course information.",
+			"Implemented features: Students are allowed to add/search/drop courses, instructors are allowed to check the course & student information, School Administrators are allowed to add/drop courses, root users have all the permissions. ",
+			"Building environment: C++, QT creator, SQLite"
+		]
 	},
 	{
-		name:"QTcpServer",
-		timeline:"June 2021",
-		link:"https://github.com/ZhengXiaohu98/QTcpServer",
-		details:[
-							"A simple GUI application which allows both server and client to send and receive messages from each other.",
-							"Implemented features: Connecting/Disconnecting functionalities for both sides, sending/receiving messages for both sides."
-						]
+		name: "Basic OpenCV",
+		timeline: "May 2020",
+		link: "https://github.com/ZhengXiaohu98/OpenCV_DEMO",
+		details: [
+			"A program which demonstrates basic functionalities of OpenCV library.",
+			"Implemented features: changing color space and rotating images, creating trackbars, mouse event and keyboard responses, face detection.",
+			"Building environment: C++, Visual Studio, OpenCV library"
+		]
+	},
+	{
+		name: "QTcpServer",
+		timeline: "June 2021",
+		link: "https://github.com/ZhengXiaohu98/QTcpServer",
+		details: [
+			"A simple GUI application which allows both server and client to send and receive messages from each other.",
+			"Implemented features: Connecting/Disconnecting functionalities for both sides, sending/receiving messages for both sides."
+		]
 	}
 ];
 
@@ -50,7 +60,7 @@ let i = 0;
 
 function changeProject(val) {
 	// going backward or forward
-	i = (i+projects.length+val)%projects.length
+	i = (i + projects.length + val) % projects.length
 
 	// text holds the HTML project content
 	let text = "";
